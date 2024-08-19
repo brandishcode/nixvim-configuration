@@ -10,5 +10,6 @@
       };
     };
     nvim-colorizer.enable = true;
+    transparent.enable = true;
   };
 }
