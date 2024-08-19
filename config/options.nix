@@ -12,6 +12,6 @@
     scrolloff = 8;
     colorcolumn = "80";
     hlsearch = false;
-    termguicolors = false;
+    termguicolors = true;
   };
 }

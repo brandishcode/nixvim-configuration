@@ -4,4 +4,9 @@
 
   viAlias = true;
   vimAlias = true;
+
+  colorschemes.tokyonight = {
+    enable = true;
+    style = "night";
+  };
 }
