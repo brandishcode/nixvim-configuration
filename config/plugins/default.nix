@@ -1,5 +1,6 @@
 {
-  imports = [ ./conform.nix ./fugitive.nix ./cmp.nix ./telescope ];
+  imports =
+    [ ./conform.nix ./fugitive.nix ./cmp.nix ./telescope ./undotree.nix ];
 
   plugins = {
     lsp = {

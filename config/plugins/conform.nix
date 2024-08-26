@@ -5,7 +5,7 @@ in {
   extraPackages = [ pkgs.${nixformatter} ];
   plugins.conform-nvim = {
     enable = true;
-    formatOnSave = { timeoutMs = 500; };
     formattersByFt = { nix = [ nixformatter ]; };
+    settings = { format_on_save = { timeoutMs = 500; }; };
   };
 }
