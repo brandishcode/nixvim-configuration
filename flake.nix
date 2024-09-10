@@ -17,9 +17,10 @@
           module = ./config;
         };
       in {
-        packages = {
+        packages = rec {
           default = defaultNixvim;
           cpp = defaultNixvim.extend { imports = [ ./cpp ]; };
+          opengl = cpp.extend { imports = [ ./opengl ]; };
         };
       });
 }
