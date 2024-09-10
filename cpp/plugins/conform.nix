@@ -7,7 +7,7 @@ let
 in {
   extraPackages = [ pkgs.${cpppackage} pkgs.${cmakeformatter} ];
   plugins.conform-nvim = {
-    formattersByFt = {
+    settings.formatters_by_ft = {
       cpp = [ cppformatter ];
       cmake = [ cmakeformatter ];
     };
