@@ -1,1 +1,1 @@
-{ imports = [ ./conform.nix ./lsp.nix ]; }
+{ imports = [ ./conform.nix ./lsp.nix ./cmake-tools.nix ]; }
