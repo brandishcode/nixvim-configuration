@@ -3,6 +3,7 @@
     enable = true;
     settings = {
       cmake_build_directory = "build/\${variant:buildtype}";
+      # TODO: have to configure properly
       # cmake_dap_configuration = {
       #   cwd = "\${workspaceFolder}";
       #   name = "Launch file";
@@ -36,4 +37,19 @@
       # cmake_soft_link_compile_commands = false;
     };
   };
+
+  keymaps = [
+    {
+      action = "<Cmd>CMakeBuild<Cr>";
+      key = "<Leader>cmb";
+    }
+    {
+      action = "<Cmd>CMakeRun<Cr>";
+      key = "<Leader>cmr";
+    }
+    {
+      action = "<Cmd>CMakeClean<Cr>";
+      key = "<Leader>cmc";
+    }
+  ];
 }
