@@ -27,5 +27,10 @@
       action = "<Cmd>Explore<Cr>";
       key = "<Leader>w";
     }
+    {
+      mode = "n";
+      action = "<Cmd>lua vim.diagnostic.open_float()<Cr>";
+      key = "<Leader>vd";
+    }
   ];
 }
