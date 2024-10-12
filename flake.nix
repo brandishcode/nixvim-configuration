@@ -21,6 +21,7 @@
           default = defaultNixvim;
           cpp = defaultNixvim.extend { imports = [ ./cpp ]; };
           opengl = cpp.extend { imports = [ ./opengl ]; };
+          go = defaultNixvim.extend { imports = [ ./go ]; };
         };
       });
 }
