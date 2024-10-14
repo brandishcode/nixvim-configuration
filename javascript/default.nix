@@ -5,6 +5,9 @@ in {
   extraPackages = [ pkgs.${javascriptformatter} ];
   plugins.lsp.servers.ts_ls.enable = true;
   plugins.conform-nvim = {
-    settings.formatters_by_ft = { javascript = [ javascriptformatter ]; };
+    settings.formatters_by_ft = {
+      javascript = [ javascriptformatter ];
+      javascriptreact = [ javascriptformatter ];
+    };
   };
 }
