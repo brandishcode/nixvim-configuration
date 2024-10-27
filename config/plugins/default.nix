@@ -6,9 +6,11 @@
     ./telescope
     ./undotree.nix
     ./treesitter.nix
+    ./neorg.nix
   ];
 
   plugins = {
+    web-devicons.enable = true;
     lsp = {
       enable = true;
       servers = {
