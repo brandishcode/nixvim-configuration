@@ -9,4 +9,10 @@
     enable = true;
     settings = { style = "night"; };
   };
+
+  extraFiles = {
+    "ftplugin/norg.lua".text = ''
+      vim.opt_local.conceallevel=2     
+    '';
+  };
 }
