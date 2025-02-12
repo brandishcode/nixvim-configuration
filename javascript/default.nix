@@ -7,6 +7,8 @@ in {
   plugins.conform-nvim = {
     settings.formatters_by_ft = {
       javascript = [ javascriptformatter ];
+      typescript = [ javascriptformatter ];
+      typescriptreact = [ javascriptformatter ];
       javascriptreact = [ javascriptformatter ];
     };
   };
