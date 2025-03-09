@@ -23,6 +23,7 @@
           opengl = cpp.extend { imports = [ ./opengl ]; };
           go = defaultNixvim.extend { imports = [ ./go ]; };
           js = defaultNixvim.extend { imports = [ ./javascript ]; };
+          java = defaultNixvim.extend { imports = [ ./java ]; };
         };
       });
 }
