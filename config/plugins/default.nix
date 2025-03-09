@@ -18,7 +18,7 @@
         marksman.enable = true;
       };
     };
-    nvim-colorizer.enable = true;
+    colorizer.enable = true;
     transparent.enable = true;
   };
 }
