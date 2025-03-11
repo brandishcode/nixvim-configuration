@@ -32,5 +32,10 @@
       action = "<Cmd>lua vim.diagnostic.open_float()<Cr>";
       key = "<Leader>vd";
     }
+    {
+      mode = "n";
+      action = "<Cmd>Neorg index<Cr>";
+      key = "<Leader>ni";
+    }
   ];
 }
