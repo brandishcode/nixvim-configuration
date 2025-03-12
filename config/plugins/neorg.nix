@@ -11,6 +11,7 @@
             default_workspace = "home";
           };
         };
+        "core.presenter" = { config = { zen_mode = "zen-mode"; }; };
         "core.concealer" = { config = { icon_preset = "diamond"; }; };
         "core.qol.todo_items" = {
           config = {
@@ -22,6 +23,7 @@
           };
         };
       };
+      telescopeIntegration.enable = true;
     };
   };
 
@@ -31,8 +33,23 @@
       vim.g.maplocalleader = ","
       vim.keymap.set('n',
         '<localleader>c',
-        ':lua require("neorg.core").modules.loaded_modules["core.qol.todo_items"].public["task-cycle"]()<Cr>',
-        { desc = "Toggle todo item" }
+        '<Plug>(neorg.qol.todo-items.todo.task-cycle)',
+        { desc = "Neorg: core.qol.todo-items toggle" }
+      )
+      vim.keymap.set('n',
+        '<localleader>pn',
+        '<Plug>(neorg.presenter.next-page)',
+        { desc = "Neorg: core.presenter next-page" }
+      )
+      vim.keymap.set('n',
+        '<localleader>pp',
+        '<Plug>(neorg.presenter.previous-page)',
+        { desc = "Neorg: core.presenter previous-page" }
+      )
+      vim.keymap.set('n',
+        '<localleader>pc',
+        '<Plug>(neorg.presenter.close)',
+        { desc = "Neorg: core.presenter close" }
       )
     '';
   };
