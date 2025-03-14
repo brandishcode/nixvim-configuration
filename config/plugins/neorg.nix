@@ -11,6 +11,7 @@
             default_workspace = "home";
           };
         };
+        "core.ui.calendar" = { __empty = null; };
         "core.presenter" = { config = { zen_mode = "zen-mode"; }; };
         "core.concealer" = { config = { icon_preset = "diamond"; }; };
         "core.qol.todo_items" = {
