@@ -25,5 +25,12 @@
           js = defaultNixvim.extend { imports = [ ./javascript ]; };
           java = defaultNixvim.extend { imports = [ ./java ]; };
         };
+        nixvim-configs = {
+          js = import ./javascript { inherit pkgs; };
+          java = import ./java { inherit pkgs; };
+          cpp = import ./java { inherit pkgs; };
+          opengl = import ./opengl { inherit pkgs; };
+          go = import ./go { inherit pkgs; };
+        };
       });
 }
