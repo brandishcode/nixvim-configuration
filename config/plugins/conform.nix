@@ -1,10 +1,8 @@
 { pkgs, ... }:
 
-let
-  nixformatter = "nixfmt";
-  luaformatter = "luaformatter";
+let nixformatter = "nixfmt";
 in {
-  extraPackages = [ pkgs.${nixformatter} pkgs.${luaformatter} ];
+  extraPackages = [ pkgs.${nixformatter} pkgs.luaformatter ];
   plugins.conform-nvim = {
     enable = true;
 
@@ -12,7 +10,7 @@ in {
       format_on_save = { timeoutMs = 500; };
       formatters_by_ft = {
         nix = [ nixformatter ];
-        lua = [ luaformatter ];
+        lua = [ "lua-format" ];
       };
     };
   };
