@@ -19,7 +19,7 @@
       in {
         packages = rec {
           default = defaultNixvim;
-          cpp = defaultNixvim.extend { imports = [ ./cpp ]; };
+          cpp = defaultNixvim.extend { imports = [ (import ./cpp { }) ]; };
           opengl = cpp.extend { imports = [ ./opengl ]; };
           go = defaultNixvim.extend { imports = [ ./go ]; };
           js = defaultNixvim.extend { imports = [ ./javascript ]; };
