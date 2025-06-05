@@ -18,6 +18,10 @@ in {
         require("conform").format({ async = true, lsp_format = "fallback", range = range })
       end, { range = true })
     '';
+    settings.formatters_by_ft = {
+      nix = [ nixformatter ];
+      lua = [ "lua-format" ];
+    };
   };
   keymaps = [{
     mode = "n";
